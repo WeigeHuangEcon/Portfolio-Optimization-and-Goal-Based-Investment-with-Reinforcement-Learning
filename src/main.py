@@ -117,7 +117,7 @@ if __name__ == '__main__':
     parser.add_argument('--buy_rule',          type=str,   default='most_first', help="In which order to buy the share: 'most_first' or 'cyclic' or 'random'")
     parser.add_argument('--buy_cost',          type=float, default=0.001,        help='Cost for buying a share, prorata of the quantity being bought')
     parser.add_argument('--sell_cost',         type=float, default=0.001,        help='Cost for selling a share, prorata of the quantity being sold')
-    parser.add_argument('--bank_rate',         type=float, default=0.5,          help='Annual bank rate')
+    parser.add_argument('--bank_rate',         type=float, default=0.05,          help='Annual bank rate')
     parser.add_argument('--initial_date',      type=str,   default='2014-12-31', help="Initial date of the multidimensional time series of the assets price: str, larger or equal to '2019-07-03'")
     parser.add_argument('--final_date',        type=str,   default='2020-12-30', help="Final date of the multidimensional time series of the assets price: str, smaller or equal to '2020-12-30'")
     parser.add_argument('--limit_n_stocks',    type=int,   default=20,           help='Maximal number of shares that can be bought or sell in one trade')
